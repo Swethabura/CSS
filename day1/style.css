@@ -1,0 +1,30 @@
+body {
+    background-color:bisque;
+    /* text-align: center; */
+    margin: 2% 10% 1% 10%; 
+}
+div {
+    align-content: center;
+    text-align: center;
+    margin: 5% 13% 7% 13%;
+    background-color: aliceblue; 
+}
+.margin {
+    height: 500px;
+    background-color: blue;
+}
+.border {
+    background-color: brown;
+    text-align: center;
+    height: 300px;
+}
+.padding {
+    background-color: aqua;
+    text-align: center;
+    height: 200px;
+}
+.content {
+    background-color: cadetblue;
+    text-align: center;
+    height: 120px;
+}
