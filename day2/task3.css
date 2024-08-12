@@ -1,0 +1,280 @@
+body {
+  background-color: aliceblue;
+}
+.one {
+  /* padding: 10px 10px 10ox 10px; */
+  background-color: antiquewhite;
+  margin: 5% 5% 0% 5%;
+  height: 30vh;
+  width: 35vw;
+  float: left;
+  border-radius: 15%;
+  text-align: center;
+}
+#one {
+  font-weight: 700;
+  font-size: 30px;
+  color: blueviolet;
+  font-family: "Courier New", Courier, monospace;
+  text-shadow: 2px 3px 2px lightcoral;
+}
+#two {
+  font-weight: 600;
+  font-family: "Courier New", Courier, monospace;
+}
+.two {
+  /* padding: 10px 10px 10ox 10px; */
+  background-color: aqua;
+  margin: 5% 5% 0% 5%;
+  height: 30vh;
+  width: 35vw;
+  border-radius: 15%;
+  float: left;
+  text-align: center;
+}
+#three {
+  font-weight: 700;
+  font-size: 30px;
+  color: yellowgreen;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  text-shadow: 2px 3px 2px beige;
+}
+#four {
+  font-weight: 600;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+}
+.three {
+  /* padding: 10px 10px 10ox 10px; */
+  background-color: blueviolet;
+  margin: 3% 5% 0% 5%;
+  height: 30vh;
+  width: 35vw;
+  border-radius: 15%;
+  float: left;
+  text-align: center;
+}
+#five {
+  font-weight: 700;
+  font-size: 30px;
+  color: violet;
+  font-family: cursive;
+}
+#six {
+  font-weight: 600;
+  font-family: cursive;
+}
+.anchor {
+  color: aliceblue;
+}
+.four {
+  /* padding: 10px 10px 10ox 10px; */
+  background-color: brown;
+  margin: 3% 5% 0% 5%;
+  height: 30vh;
+  width: 35vw;
+  border-radius: 15%;
+  float: left;
+  text-align: center;
+}
+#seven {
+  font-weight: 700;
+  font-size: 30px;
+  color: aliceblue;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+#eight {
+  font-weight: 600;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+.five {
+  /* padding: 10px 10px 10ox 10px; */
+  background-color: violet;
+  margin: 3% 5% 0% 5%;
+  height: 30vh;
+  width: 35vw;
+  border-radius: 15%;
+  float: left;
+  text-align: center;
+}
+#nine {
+  font-weight: 700;
+  font-size: 30px;
+  color: yellow;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+}
+#ten {
+  font-weight: 600;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+}
+.six {
+  /* padding: 10px 10px 10ox 10px; */
+  background-color: tomato;
+  margin: 3% 5% 0% 5%;
+  height: 30vh;
+  width: 35vw;
+  border-radius: 15%;
+  float: left;
+  text-align: center;
+}
+#eleven {
+  font-weight: 700;
+  font-size: 30px;
+  color: yellowgreen;
+  font-family: "Times New Roman", Times, serif;
+}
+#twelve {
+  font-weight: 600;
+  font-family: "Times New Roman", Times, serif;
+}
+.seven {
+  background-color: darkcyan;
+  margin: 10% 5% 0% 5%;
+  height: 15vh;
+  width: 35vw;
+  border-radius: 15%;
+  float: left;
+  text-align: center;
+}
+#C {
+  text-decoration: none;
+  text-align: center;
+  font-size: 30px;
+  color: blanchedalmond;
+}
+.eight {
+  background-color: darkorange;
+  margin: 10% 5% 0% 5%;
+  height: 15vh;
+  width: 35vw;
+  border-radius: 15%;
+  float: left;
+  text-align: center;
+}
+#Cs {
+  text-decoration: none;
+  text-align: center;
+  font-size: 30px;
+  color: whitesmoke;
+}
+.nine {
+  background-color: darkblue;
+  margin: 3% 0.5% 0% 5%;
+  height: 15vh;
+  width: 15vw;
+  border-radius: 15%;
+  float: left;
+  text-align: center;
+}
+#R {
+  text-decoration: none;
+  text-align: center;
+  font-size: 30px;
+  color: beige;
+}
+.ten {
+  background-color: darkmagenta;
+  margin: 3% 5% 0% 5%;
+  height: 15vh;
+  width: 15vw;
+  border-radius: 15%;
+  float: left;
+  text-align: center;
+}
+#kotlin {
+  text-decoration: none;
+  text-align: center;
+  font-size: 30px;
+  color: wheat;
+}
+.eleven {
+  background-color: darkgoldenrod;
+  margin: 3% 0.5% 0% 5%;
+  height: 15vh;
+  width: 15vw;
+  border-radius: 15%;
+  float: left;
+  text-align: center;
+}
+#node {
+  text-decoration: none;
+  text-align: center;
+  font-size: 30px;
+  color: black;
+}
+.twelve {
+  background-color: deeppink;
+  margin: 3% 5% 0% 5%;
+  height: 15vh;
+  width: 15vw;
+  border-radius: 15%;
+  float: left;
+  text-align: center;
+}
+#react {
+  text-decoration: none;
+  text-align: center;
+  font-size: 30px;
+  color: blue;
+}
+.thirteen {
+  background-color: blanchedalmond;
+  margin: 3% 0.5% 0% 5%;
+  height: 15vh;
+  width: 15vw;
+  border-radius: 15%;
+  float: left;
+  text-align: center;
+}
+#json {
+  text-decoration: none;
+  text-align: center;
+  font-size: 30px;
+  color: blue;
+}
+.fourteen {
+  background-color: chartreuse;
+  margin: 3% 5% 0% 5%;
+  height: 15vh;
+  width: 15vw;
+  border-radius: 15%;
+  float: left;
+  text-align: center;
+}
+#vue {
+  text-decoration: none;
+  text-align: center;
+  font-size: 30px;
+  color: black;
+}
+.fifteen {
+  background-color: blueviolet;
+  margin: 3% 0.5% 0% 5%;
+  height: 15vh;
+  width: 15vw;
+  border-radius: 15%;
+  float: left;
+  text-align: center;
+}
+#sql {
+  text-decoration: none;
+  text-align: center;
+  font-size: 30px;
+  color: beige;
+}
+.sixteen {
+  background-color: chocolate;
+  margin: 3% 5% 0% 5%;
+  height: 15vh;
+  width: 15vw;
+  border-radius: 15%;
+  float: left;
+  text-align: center;
+}
+#xml {
+  text-decoration: none;
+  text-align: center;
+  font-size: 30px;
+  color: aquamarine;
+}
