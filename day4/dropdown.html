@@ -5,44 +5,56 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Task-2</title>
     <style>
-        body {
-            margin: 10% 35%;
+        .container{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
         }
-        .button {
-            font-size: large;
+        .container .button {
+            background-color: rgb(122, 130, 130);
+            padding: 15px;
+            color:aliceblue;
             cursor: pointer;
-            margin-left: 25%;
-            background-color:burlywood;
-            color:blue;
-        } 
-        .col2 {
-            width: 20vw;
-            height: 50vh;
-            background-color:violet;
-            border: 2px solid black;
+            font-size: large;
+            border: none;
+            margin-top: 5%;
+        }
+        .container a {
+            display: block;
+            text-decoration: none;
+            color: rgb(251, 251, 252);
+            padding: 10px;
+            font-size: 17px;
+            text-align: center;
+        }
+        .container .col2 {
+            background-color: rgb(159, 148, 148);
+            width: 10%;
+            box-shadow: 3px 3px 5px rgb(147, 93, 147);
             display: none;
         }
-        .button:hover~.col2 {
+        #li {
+            border: 1px solid;
+            padding: 3px;
+            border: none;
+            background-color:rgb(128, 124, 124);
+            text-align: center;
+         }
+         .button:hover ~ .col2 {
             display: block;
-        }
-        .one {
-            font-size: 150%;
-            margin-left: 38%;
-            font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-        }
-
+         }
     </style>
 </head>
 <body>
-    <input type="button" value="button" class="button"><br><br>
-    <div class="col2"><br><br>
-        <span class="one">Home</span><br><br> 
-       <span class="one">About</span><br><br>
-       <span class="one">Projects</span><br><br>
-       <span class="one">News</span><br><br>
-       <span class="one">Contact</span>
-       
+    <div class="container">
+    <button class="button">Menu</button>
+    <div class="col2">
+        <a href="https://www.zomato.com/">Home</a>
+        <a href="https://www.zomato.com/who-we-are">Who we are</a>
+        <a href="https://www.zomato.com/careers">Careers</a>
     </div>
+</div>
     
 
 </body>

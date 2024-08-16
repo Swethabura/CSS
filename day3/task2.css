@@ -105,6 +105,47 @@
   top: 25%;
   font-size: larger;
 }
+.search div input::placeholder {
+  color: #bbb;
+}
+.chatlist {
+  position: relative;
+  margin-top: 22%;
+   height: calc(100% - 100px); /* 40px + 60px =100px   */
+   overflow-y: auto;
+   /* background: #ff0; */
+}
+.chatlist .block {
+  position: relative;
+  width: 100%;
+  display: flex;
+  /* justify-content: center; */
+  align-items: center;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.06);
+  cursor: pointer;
+  height: 50px;
+  margin-left: 2%;
+}
+.chatlist .block .imgbx { 
+  position: relative;
+  display: flex;
+  width: 40px;
+  height: 40px;
+  overflow: hidden;
+  border-radius: 50%;
+}
+.chatlist .block .details {
+  position: relative;
+  width: 80%;
+  margin-top: 5%;
+}
+.chatlist .block .details .one {
+  display: flex;
+  justify-content: space-between;
+}
+
+
+
 
 
 
