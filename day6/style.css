@@ -19,13 +19,15 @@
     z-index: 2;  
     box-shadow: 3px 3px 5px gray; 
 }
-#home {
-    margin: 1.5%;
+#one {
+    /* display: flex;
+    flex-direction: row; */
+    margin: 1.5% 1%;
 }
 .home {
-   border: 1px solid;
-   padding: 5px;
-   border-style: none;    
+    border: 1px solid;
+    border-style: none;   
+    padding: 8px;
 }
 .home:hover{
     background-color: whitesmoke;
@@ -59,7 +61,7 @@ a {
     /* align-items: start;     */
     margin: 5% 5% 7% 10%;
 }
-.home-page {
+#home-page {
     width: 100%;
     margin-top: 0.5%;
 }
