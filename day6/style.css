@@ -1,0 +1,200 @@
+/* body {
+    margin-bottom: 5%;
+} */
+.main {
+    width: 100%;
+}
+.header{
+    width: 100%;
+} 
+.nav {
+    width: 100%;
+    height: 10vh;
+    background-color: white;
+    border-top: 1px solid;
+    display: flex;
+    justify-content: space-between;
+    position: fixed;
+    top: 0%;
+    z-index: 2;  
+    box-shadow: 3px 3px 5px gray; 
+}
+#home {
+    margin: 1.5%;
+}
+.home {
+   border: 1px solid;
+   padding: 5px;
+   border-style: none;    
+}
+.home:hover{
+    background-color: whitesmoke;
+}
+.list {
+    display: flex;
+    width: 25%;
+    justify-content: space-between;
+    align-items: center;
+    margin-right: 1.5%;
+}
+a {
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    text-decoration: none;
+    color: black;
+}
+.li:hover {
+    background-color: whitesmoke;
+    border: 1px solid;
+    padding: 8px;
+    border-style: none;
+}
+#about-page, #menu-page, #contact-page {
+    width: 100%;
+}
+#about-sec, #menu-sec{
+    width: 80%;
+    /* height: 650px; */
+    display: flex;
+    justify-content: start;
+    /* align-items: start;     */
+    margin: 5% 5% 7% 10%;
+}
+.home-page {
+    width: 100%;
+    margin-top: 0.5%;
+}
+.home-img1 {
+    max-width: 100%;
+}
+#img1 {
+    width: 100%;
+    height: 110vh;
+    position: relative;;
+}
+#img-note {
+    position: absolute;
+    bottom: 3%;
+    left: 1.5%;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-size: 220%;
+    text-shadow: 3px 2px 2px;
+    color: grey;
+}
+#about {
+    width: 500px;
+    height: 620px;
+    background-repeat: no-repeat;
+    /* margin-top: 5%;
+    margin-left: 10%; */
+    background-size: 500px 620px;
+    opacity: 0.7;
+}
+.home-para{
+    /* width: 500px; */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding-left: 50px;
+}
+#h1 {
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-weight: 500;
+    letter-spacing: 3px;
+    text-align: center;
+}
+#p1 {
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 110%;
+    text-align: center;
+    letter-spacing: 2px;
+}
+#p2 {
+    font-family:'Times New Roman', Times, serif;
+    letter-spacing: 1px;
+    line-height: 22px;
+    font-size: 110%;
+}
+#mark{
+    background-color: rgb(201, 199, 199);
+}
+#p3 {
+    font-family:'Times New Roman', Times, serif;
+    letter-spacing: 1px;
+    line-height: 22px;
+    font-size: 110%;
+    color: rgb(155, 149, 149);
+}
+hr{ 
+    border: 0;
+    height: 0;
+    border-top: 1px solid rgba(0, 0, 0, 0.1);
+    border-bottom: 1px solid rgba(255, 255, 255, 0.3);
+    width: 80%;
+    margin-bottom: 7%;
+}
+.menu-para {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding-right: 78px;
+}
+#h3 {
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-weight: 500;
+    letter-spacing: 3px;
+}
+#p4 {
+    font-family:'Times New Roman', Times, serif;
+    letter-spacing: 1px;
+    line-height: 22px;
+    font-size: 90%;
+    color: rgb(155, 149, 149);
+}
+#menu {
+    width: 450px;
+    height: 700px;
+    background-repeat: no-repeat;
+    /* margin-top: 5%;
+    margin-left: 10%; */
+    background-size: 450px 680px;
+    opacity: 0.7;
+}
+#contact-sec {
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+    margin: 5% 5% 3% 10%;
+    justify-items: start;
+    align-items: start;
+}
+#p5 {
+    /* font-family:'Times New Roman', Times, serif; */
+    color: rgb(63, 63, 97);
+    font-weight: 600;
+}
+
+#text, #number, #date, #message{
+    width: 80%;
+    border-style: none;
+    padding: 1.5%;
+    border-bottom: 1px solid rgb(218, 213, 213);
+    margin-left: 10%;
+    font-family:'Times New Roman', Times, serif;
+    font-size: large;
+}
+#submit{
+    margin-left: 10%;
+    padding: 1%;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 105%;
+    border-style: none;
+}
+.footer{
+    margin-top: 8%;
+    width: 100%;
+    height: 20vh;
+    background-color: whitesmoke;
+}
+    
+
+
