@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Grid Examples-1</title>
+    <style>
+        body{
+            background-color: blue;
+        }
+        .container{
+            margin: 5% 10%;
+            width: 80%;
+            height: 80vh;
+            /* border: 1px solid white; */
+            display: grid;
+            grid-template-columns: 25% 25% 25% 25%;
+            gap: 15px 15px;
+            padding: 5px;
+        }
+        .grid-item{
+            background-color: white;
+            /* margin: 5%;  */
+        }
+        .item-1{
+            align-content: center;
+            text-align: center;
+            grid-column: 1/2;
+            grid-row-start: 1;
+            grid-row-end: 3;
+        }
+        .item-2{
+            align-content: center;
+            text-align: center;
+            grid-column: 2/3;  
+            grid-row: 1/2;         
+        }
+        .item-3{
+            align-content: center;
+            text-align: center;
+            grid-column: 3/5;
+            grid-row:1/2;
+
+        }
+        .item-4{
+            align-content: center;
+            text-align: center;
+            grid-column: 2/3;
+            grid-row: 2/3;
+            /* grid-row-start: 2; */
+        }
+        .item-5{
+            align-content: center;
+            text-align: center;
+            grid-column: 3/4;
+            grid-row: 2/4;
+        }
+        .item-6{
+            align-content: center;
+            text-align: center;
+            grid-row: 2/3;
+            grid-column: 4/5;
+        }
+        .item-7{
+            align-content: center;
+            text-align: center;
+            grid-column: 1/2;
+            grid-row: 3/4;            
+        }
+        .item-8{
+            align-content: center;
+            text-align: center;
+            grid-column: 2/3;
+            grid-row: 3/5;
+        }
+        .item-9{
+            align-content: center;
+            text-align: center;
+            grid-column: 4/5;
+            grid-row: 3/4;
+        }
+        .item-10{
+            align-content: center;
+            text-align: center;
+            grid-row: 4/5;
+            grid-column: 1/2;
+        }
+        .item-11{
+            align-content: center;
+            text-align: center;
+            grid-column: 3/5;
+            grid-row: 4/5;
+        }
+
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="grid-item item-1">Masonry I</div>
+      <div class="grid-item item-2">Responsive</div>
+      <div class="grid-item item-3">Overlap</div>
+      <div class="grid-item item-4">Fluid</div>
+      <div class="grid-item item-5">Explicity placed</div>
+      <div class="grid-item item-6">Negative Space</div>
+      <div class="grid-item item-7">Flexible Breadth</div>
+      <div class="grid-item item-8">Masonry II</div>
+      <div class="grid-item item-9">Masonry III</div>
+      <div class="grid-item item-10">DOM Order</div>
+      <div class="grid-item item-11">Named Tracks</div>
+    </div>
+  </body>
+</html>
