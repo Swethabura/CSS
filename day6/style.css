@@ -14,8 +14,8 @@
     border-top: 1px solid;
     display: flex;
     justify-content: space-between;
-    position: fixed;
-    top: 0%;
+    position: sticky;
+    top: 0;
     z-index: 2;  
     box-shadow: 3px 3px 5px gray; 
 }

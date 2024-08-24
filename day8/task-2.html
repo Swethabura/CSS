@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Grid with Grid area-2</title>
+    <style>
+      body {
+        background-color: blue;
+      }
+      .container {
+        margin: 5% 5%;
+        width: 90%;
+        height: 75vh;
+        display: grid;
+        grid-template-columns: auto auto auto auto;
+        gap: 15px;
+        grid-template-areas:
+          "masonry1 responsive overlap overlap"
+          "masonry1 fluid explicity neg-space"
+          "flexible masonry2 explicity masonry3"
+          "dom masonry2 tracks tracks";
+      }
+      .container div {
+        background-color: whitesmoke;
+        text-align: center;
+        align-content: center;
+      }
+      .item1 {
+        grid-area: masonry1;
+      }
+      .item2 {
+        grid-area: responsive;
+      }
+      .item3 {
+        grid-area: overlap;
+      }
+      .item4 {
+        grid-area: fluid;
+      }
+      .item5 {
+        grid-area: explicity;
+      }
+      .item6 {
+        grid-area: neg-space;
+      }
+      .item7 {
+        grid-area: flexible;
+      }
+      .item8 {
+        grid-area: masonry2;
+      }
+      .item9 {
+        grid-area: masonry3;
+      }
+      .item10 {
+        grid-area: dom;
+      }
+      .item11 {
+        grid-area: tracks;
+      }
+      @media only screen and (width<800px) {
+        body {
+          background-color: burlywood;
+        }
+      }
+      @media only screen and (width<600px) {
+        body {
+          background-color: black;
+        }
+        .container {
+          grid-template-columns: auto;
+          grid-template-areas:
+            "masonry1"
+            "responsive"
+            "overlap"
+            "fluid"
+            "explicity"
+            "neg-space"
+            "flexible"
+            "masonry2"
+            "masonry3"
+            "dom"
+            "tracks";
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="item1">Masonry I</div>
+      <div class="item2">Responsive</div>
+      <div class="item3">Overlap</div>
+      <div class="item4">Fluid</div>
+      <div class="item5">Explicitly Placed</div>
+      <div class="item6">Negative Space</div>
+      <div class="item7">Flexible Breadth</div>
+      <div class="item8">Masonry II</div>
+      <div class="item9">Masonry III</div>
+      <div class="item10">DOM Order</div>
+      <div class="item11">Named Tracks</div>
+    </div>
+  </body>
+</html>
