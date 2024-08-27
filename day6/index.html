@@ -22,18 +22,23 @@
         <div>
           <a href="#contact-page"><span class="li">Contact</span></a>
         </div>
+        <div>
+        <ion-icon name="contrast-outline" onclick="myFunction()"></ion-icon>
+        <script>
+          function myFunction(){
+            var element = document.body;
+            element.classList.toggle("dark-mode");
+          }
+        </script>
+      </div>
       </div>
     </div>
+    <div class="main">
     <div id="home-page">
       <!-- home image -->
       <div class="home-img1">
-        <img
-          src="https://hyderabadbloggers.com/wp-content/uploads/2018/05/Seoul_1_c-1.jpg"
-          alt=""
-          id="img1"
-        />
+        <p id="img-note">Le Catering</p>
       </div>
-      <span id="img-note">Le Catering</span>
     </div>
     <div id="about-page">
       <!-- about section -->
@@ -69,7 +74,7 @@
         </div>
       </div>
     </div>
-    <hr />
+<hr>
     <div id="menu-page">
       <div id="menu-sec">
         <div class="menu-para">
@@ -104,7 +109,7 @@
     <div id="contact-page">
       <!-- contact -->
       <div id="contact-sec">
-        <h1 id="h1">Contact</h1>
+        <h1 id="h1-cont">Contact</h1>
         <p>
           We offer full-service catering for any event, large or small. We
           understand your needs and we will cater the food to satisfy the
@@ -146,5 +151,10 @@
         </form>
       </div>
     </div>
+  
     <div class="footer"></div>
-  </body>
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+<script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+</div>  
+</body>
+  </html>
