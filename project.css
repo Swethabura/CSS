@@ -1,0 +1,154 @@
+* {
+    padding: 0;
+    margin: 0;
+    text-decoration: none;
+    list-style: none;
+    box-sizing: border-box;
+}
+body{
+    width: 100vw;
+    height: 100vh;
+    overflow: hidden;
+}
+.main {
+    width: 100%;
+    height: 100%;
+    overflow-y: scroll;
+    padding: 1%;
+}
+nav {
+    /* background: black; */
+    position: fixed;
+    top: 0;
+    left: 0;
+    /* height: 12vh; */
+    width: 100%;
+    padding: 10px 10px;
+    /* border-bottom: 1px solid black; */
+    /* transition: 0.6s; */
+    z-index: 1;
+}
+.nav{
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+}
+.logo{
+    position: relative;
+    color: white;
+    font-size: 200%;
+    font-family: 'Courier New', Courier, monospace;
+    padding: 0 10vw;
+    line-height: 10vh;
+    font-weight: bold;
+    /* transition: 0.6s; */
+}
+.logo:hover{
+    background-color: #7c7676;
+}
+.nav ul {
+    position: relative;
+    margin-right: 10%;
+    display: flex;
+    gap: 2.5vw;
+    padding: 1.2%;  
+}
+.nav ul li{
+    /* border: 1px solid white; */
+    position: relative;
+    padding: 1.5%;
+}
+.nav ul li a{
+    position: relative;
+    color: white;
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: 600;
+    transition: color 0.4s ease-in-out;
+}
+.nav ul li:hover{
+    background-color: #7c7676;
+}
+.checkbtn{
+    font-size: 150%;
+    color: white;
+    float: right;
+    line-height: 10vh;
+    margin-right: 2%;
+    cursor: pointer;
+    display: none;
+}
+#check{
+    display: none;
+}
+.sec1 {
+    position: relative;
+    /* background: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRXJA32WU4rBpx7maglqeEtt3ot1tPIRWptxA&s); */
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 100%;
+    background-size: 100% 100%;
+}
+div.scroll-container {
+    background-color: #333;
+    overflow-y: hidden;
+    white-space: nowrap;
+    /* padding: 10px; */
+    width: 100%;
+    height: 100%;
+  }
+  div.scroll-container img{
+    width: 100%;
+    height: 100%;
+  } 
+  ::-webkit-scrollbar {
+    display: none;
+}
+
+   
+
+  
+
+@keyframes scrolling{
+    from{
+        transform: translate(0px);
+    }
+    to {
+        transform: translate(-100px);
+    }
+
+}
+@media only screen and (width<800px){
+    .checkbtn{
+        display: block;
+    }
+    ul{
+        position: absolute;
+        width: 100%;
+        height: 55vh;
+        background-color: black;
+        top: 10vh;
+        left:-100% ;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-around;
+        gap: 10%;
+        padding: 10%;
+        transition: all .5s;
+    }
+    ul li{
+        font-size: larger;
+        padding: 10%;
+    }
+    #check:checked ~ .nav ul{
+        left: 0%;
+    }
+   
+    
+}
+
+
+
+
+
+
