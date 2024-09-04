@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="w3.css" />
+  </head>
+  <body>
+    <div class="container">
+      <div class="navbar">
+        <div class="logo">infermentum</div>
+        <div class="navlist">
+          <ul>
+            <li>LEAVEND</li>
+            <li>COOKIES</li>
+            <li>WHO WE ARE</li>
+          </ul>
+          <ion-icon name="cart-outline"></ion-icon>
+          <ion-icon name="person-circle-outline"></ion-icon>
+          <p>EN</p>
+          <ion-icon name="menu-outline" id="menu"></ion-icon>
+        </div>
+      </div>
+      <div class="home panel">
+        <div class="img">
+          <img
+            src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRMU4Jb4mYTADzYBlIR8I_9ikkfgyrQ6QsZLw&s"
+            alt=""
+          />
+        </div>
+        <div class="content">
+          <p>Homemade Cookies</p>
+          <h1>Sbrisolotto Biscuits</h1>
+          <p>
+            Can any house be without a package of chocolate cookies? Crunchy and
+            flaky, enriched by the soft and velvety pleasure of chips of dark
+            chocolate. A perfect snack for children or indulgent companion to a
+            cup of coffee or tea for adults. They also make a perfect gift for
+            guests. Be warned … it’s impossible to eat just one!
+          </p>
+        </div>
+      </div>
+      <!-- home page images -->
+
+      <section id="#section0" class="panel red">
+        ZERO
+      </section>
+      <section id="#section1" class="panel orange">
+        ONE
+      </section>
+      <section id="#section2" class="panel purple">
+        TWO
+      </section>
+      <section id="#section3" class="panel green">
+        THREE
+      </section>
+      
+
+      <!-- <div class="hide-nav">
+        <h1>Homemade Cookies</h1>
+        <h1>Leavened Dessert</h1>
+        <div>
+          <ul>
+            <li>Home</li>
+            <li>Who we are</li>
+            <li>News and events</li>
+            <li>Contacts</li>
+            <li>Where to buy</li>
+            <li>IT - EN - FR - DE</li>
+          </ul>
+        </div>
+      </div> -->
+    </div>
+    <script>
+      gsap.registerPlugin(ScrollTrigger);
+
+      gsap.to(".panel:not(:last-child)", {
+        yPercent: -100,
+        ease: Linear.easeNone,
+        stagger: 0.5,
+        scrollTrigger: {
+          trigger: "#container",
+          start: "top top",
+          end: "+=500%",
+          scrub: 2,
+          pin: true,
+        },
+      });
+
+      gsap.set(".panel", {
+        zIndex: (i, target, targets) => targets.length - i,
+      });
+    </script>
+
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"
+    ></script>
+  </body>
+</html>

@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      .counters {
+        width: 90vw;
+        padding: 5em 2em;
+        text-align: center;
+        /* box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19); */
+        border-bottom: 1px solid;
+      }
+      .counters > div {
+        max-width: 100%;
+        margin: 0 auto;
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        gap: 5%;
+      }
+      .counter {
+        border: 1px solid;
+        position: relative;
+        display: flex;
+        font-variant-numeric:oldstyle-nums;
+        justify-content: space-around;
+    }
+    .counter h1 {
+        font-size: 3em;
+        color: rgb(31, 117, 151);
+    }
+    h3, p{
+        opacity: 0.5;        
+      }
+      .counter div{
+        padding-top: 0.5em;
+        font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    }
+      .counter::before {
+        content: "";
+        background: black;
+        position: absolute;
+        width: 1px;
+        height: 6em;
+        left: 47%;
+        top: 13%;
+        opacity: 0.15;
+      }
+    </style>
+  </head>
+  <body>
+    <div style="min-height: 40em"></div>
+
+    <div class="counters">
+      <div>
+        <div class="counter">
+          <h1><span data-count="109">0</span></h1>
+          <div>
+            <h3>Days</h3>
+            <p>Making</p>
+          </div>
+        </div>
+        <div class="counter">
+          <h1><span data-count="28">0</span></h1>
+          <div>
+            <h3>Team</h3>
+            <p>Meetings</p>
+          </div>
+        </div>
+        <div class="counter">
+          <h1><span data-count="87">0%</span></h1>
+          <div>
+            <h3>Tea</h3>
+            <p>Cups</p>
+          </div>
+        </div>
+        <div class="counter">
+          <h1><span data-count="784">0+</span></h1>
+          <div>
+            <h3>Perfected</h3>
+            <p>Design</p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div style="min-height: 20em"></div>
+
+    <script>
+      const counters = document.querySelectorAll(".counters span");
+      const container = document.querySelector(".counters");
+      let activated = false;
+      window.addEventListener("scroll", () => {
+        if (
+          pageYOffset > container.offsetTop - container.offsetHeight - 200 &&
+          activated === false
+        ) {
+          counters.forEach((counter) => {
+            counter.innerText = 0;
+            let count = 0;
+            function updateCount() {
+              const target = parseInt(counter.dataset.count);
+              if (count < target) {
+                count++;
+                counter.innerText = count;
+                setTimeout(updateCount, 10);
+              } else {
+                counter.innerText = target;
+              }
+            }
+            updateCount();
+            activated = true;
+          });
+        } else if (
+          pageYoffset < container.offsetTop - container.offsetHeight - 500 ||
+          (pageYoffset === 0 && activated === true)
+        ) {
+          counters.forEach((counter) => {
+            counter.innerText = 0;
+          });
+          activated = false;
+        }
+      });
+    </script>
+  </body>
+</html>

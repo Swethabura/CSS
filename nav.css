@@ -23,7 +23,7 @@ header.sticky {
     background: #fff;
 }
 header .logo {
-    position: relative;
+    /* position: relative; */
     font-weight: 700;
     color: #fff;
     text-decoration: none;
@@ -32,17 +32,17 @@ header .logo {
     letter-spacing: 2px;
 }
 header ul{
-     position: relative;
+     /* position: relative; */
      display: flex;
      justify-content: center;
      align-items: center;
 }
 header ul li {
-    position: relative;
+    /* position: relative; */
     list-style-type: none;  
 }
 header ul li a{
-    position: relative;
+    /* position: relative; */
     margin: 0 15px;
     text-decoration: none;
     color: #fff;  
@@ -62,4 +62,8 @@ header.sticky .logo{
 }
 header.sticky ul li a{
     color:#000;
+}
+
+p{
+    background-color: aqua;
 }
