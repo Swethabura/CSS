@@ -124,7 +124,7 @@ div .content1 {
   left: 35%;
   z-index: 1;
   animation-name: transform;
-  animation-duration: 6s;
+  animation-duration: 12s;
   animation-delay: 1s;
   /* animation-fill-mode: forwards; */
 }
@@ -147,7 +147,7 @@ div .content2 {
   left: -43%;
   z-index: 1;
   animation-name: transform2;
-  animation-duration: 4s;
+  animation-duration: 10s;
   animation-delay: 3s;
   /* animation-fill-mode: forwards; */
 }
@@ -171,7 +171,7 @@ div .content3 {
   right: -35%;
   z-index: 1;
   animation-name: transform3;
-  animation-duration: 4s;
+  animation-duration: 10s;
   animation-delay: 3s;
   /* animation-fill-mode: forwards; */
 }
@@ -684,10 +684,6 @@ span ion-icon {
   /* animation-delay: 1s; */
   animation-timing-function: steps(1);
   animation-iteration-count: infinite;
-}
-.scrolling-wrapper-cards div:hover{
-  background: blue;
-  cursor: pointer;
 }
 /* section7 */
 .sec7 {
@@ -1577,3 +1573,199 @@ h3 {
     left: -7.5vw;
   }
 }
+@media only screen and (width<435px){
+  ul {
+    width: 100%;
+    height: 35vh;
+    border-radius: 0%;
+    gap: 2%;
+    padding: 0%;
+  }
+  .sec1{
+    width: 100%;
+    height: 50vh;
+  }
+  div.scroll-container img {
+    width: 100vw;
+    height: 50vh;
+  }
+  div .content8{
+    position: absolute;
+    top: -75%;
+    left: 37.5%;
+  }
+  .animate__animated.animate__flip{
+    animation-duration: 2s;
+    animation-delay: 2.5s;
+  }
+  .content8 p {
+    font-size: 120%;
+  }
+   div .content9 {
+    position: absolute;
+    top: -65%;
+    left: -38%;
+  }
+  .content9 p {
+    font-size: 180%;
+  }
+  div .content10 {
+    position: absolute;
+    top: -46%;
+    left: -34%;
+  }
+  .sec2{
+    width: 100%;
+    height: 130vh;
+  }
+  .card1, .card2, .card3{
+    width: 80%;
+  }
+  .icon-1 ion-icon {
+    padding: 65%;
+  }
+  .card1 .icon-1,
+  .card2 .icon-1,
+  .card3 .icon-1 {
+    padding-right: 25%;
+  }
+  .card1 .icon-2,
+  .card2 .icon-2,
+  .card3 .icon-2 {
+    position: absolute;
+    top: 35%;
+    left: 56%;
+  }
+  .sec3{
+    width: 90%;
+    margin-left: 5%;
+    height: 80vh;
+  }
+  .sec4{
+    width: 100%;
+  }
+  .counter h1{
+    font-size: 135%;
+  }
+  .counter h3{
+    font-size: 90%;
+    margin-left: 10%;
+  }
+  .counter p{
+    font-size: 90%;
+    margin-left: 10%;
+  }
+  .sec5{
+    width: 100%;
+    height: 30vh;
+  }
+  .sec5-p{
+    font-size: 95%;
+  }
+  .sec5-h1{
+    font-size: 130%;
+  }
+  .sec5 div .option-list {
+    width: 65%;
+  }
+  .circle{
+    width: 1vw;
+    height: 1vh;
+  }
+  .sec5 .circle {
+    /* border: 1px solid black; */
+    display: flex;
+    width: 60%;
+    justify-content: space-between;
+  }
+  .sec5 .circle span {
+    border-style: none;
+    width: 2%;
+    height: 1vh;
+    border-radius: 50%;
+  }
+  @keyframes c1 {
+    0% {
+      background-color: skyblue;
+      transform: translate(0);
+    }
+    20% {
+      background-color: skyblue;
+      transform: translateX(15vw);
+    }
+    40% {
+      background-color: skyblue;
+      transform: translateX(36vw);
+    }
+    60% {
+      background-color: skyblue;
+      transform: translateX(50vw);
+    }
+    80% {
+      background-color: skyblue;
+      transform: translateX(62.5vw);
+    }
+    100% {
+      background-color: skyblue;
+      transform: translateX(0);
+    }
+  }
+  .sec6 {
+    width: 100%;
+    height: 25vh;
+  }
+  .scrolling-wrapper-cards {
+    width: 100%;
+    height: 100%;
+
+    .card {
+      flex: 0 0 auto;
+      width: 50%;
+      height: 100%;
+      /* border: 1px solid; */
+    }
+  }
+  .sec7 {
+    width: 100%;
+    height: 143vh;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    margin-top: 2%;
+   }
+  .sec7-card1,
+  .sec7-card2,
+  .sec7-card3,
+  .sec7-card4,
+  .sec7-card5,
+  .sec7-card6,
+  .sec7-card7,
+  .sec7-card8 {
+    width: 100%;
+    height: 45vh;
+    text-align: center;
+  }
+  .sec7-card1 p{
+    font-size: 125%;
+  }
+  .sec7-card1 h1{
+    font-size: 140%;
+  }
+  .sec8{
+    width: 100%;
+    height: 70vh;
+  }
+  .sec8-p2{
+    padding-bottom: 10%;
+  }
+  .sec9{
+    width: 100%;
+    height: 100vh;
+  }
+  .sec9-content{
+    height: 35vh;
+  }
+
+  
+  
+}
+
